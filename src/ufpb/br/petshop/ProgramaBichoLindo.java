@@ -34,7 +34,7 @@ public class ProgramaBichoLindo {
 					Animal animal = new Animal(nome, raca, tamanho, idade);
 					boolean cadastrou = bichoLindo.cadastrarAnimal(animal);
 					if (cadastrou) {
-						JOptionPane.showMessageDialog(null, "O animal fo cadastrado com sucesso");
+						JOptionPane.showMessageDialog(null, "O animal foi cadastrado com sucesso");
 					}
 				} catch (JaContemAnimalException e) {
 					JOptionPane.showMessageDialog(null, e.getMessage());
@@ -53,7 +53,7 @@ public class ProgramaBichoLindo {
 					String nomeTratamento = JOptionPane.showInputDialog("Nome do Tratamento:");
 					boolean finalizou = bichoLindo.finalizarTratamento(animal, nomeTratamento);
 					if (finalizou) {
-						JOptionPane.showMessageDialog(null, "O atandimento ao animal foi finalizado com sucesso");
+						JOptionPane.showMessageDialog(null, "O atendimento do animal foi finalizado com sucesso");
 					}
 				} catch (ListaTratamentoVaziaException e) {
 					JOptionPane.showMessageDialog(null, e.getMessage());
@@ -100,7 +100,7 @@ public class ProgramaBichoLindo {
 					int idade = Integer.parseInt(JOptionPane.showInputDialog("Idade:"));
 					Animal animal = new Animal(nome, raca, tamanho, idade);
 					String tratamento = JOptionPane.showInputDialog("Tipo de Tratamento\n" + "1.BANHO\n"
-							+ "2.HIDRATACÃO\n" + "3.TOSA NA MÁQUINA\n" + "4.TOSA NA TESOURA\n" + "5.TOSA HIGIÊNICA\n"
+							+ "2.HIDRATAÇÃO\n" + "3.TOSA NA MÁQUINA\n" + "4.TOSA NA TESOURA\n" + "5.TOSA HIGIÊNICA\n"
 							+ "6.DESEMBARAÇAMENTO\n" + "7.TINGIMENTO DOS PELOS\n" + "8.ESCOVAÇÃO DE DENTES\n"
 							+ "9.LIMPEZA DE OUVIDO\n" + "10.CORTE DE UNHAS\n");
 					boolean adicionado = bichoLindo.adicionarTratamento(animal, tratamento);

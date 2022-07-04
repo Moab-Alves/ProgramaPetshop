@@ -153,7 +153,7 @@ public class Animal {
         StringBuilder texto1 = new StringBuilder();
         texto1.append("TRATAMENTOS:\n--------------------------------------\n");
         for(int i = 0; i < this.nomeTratamentos.size(); i++){
-            texto1.append("Nome: " + this.nomeTratamentos.get(i) + ", Pre�o: " + this.precosTratamentos.get(i)+ "\n");
+            texto1.append("Nome: " + this.nomeTratamentos.get(i) + ", Preço: " + this.precosTratamentos.get(i)+ "\n");
             texto1.append("------------------------------------------\n");
         }
         return texto1;
